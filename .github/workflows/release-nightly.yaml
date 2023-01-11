@@ -1,0 +1,61 @@
+name: Nightly build and release
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+
+jobs:
+  build:
+    name: Build static Linux binary and release
+    runs-on: ubuntu-latest
+    container: ghcr.io/paulcadman/ghc-alpine:9.2.5
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+          repository: anoma/juvix
+          ref: main
+
+      - name: create ~/.local/bin
+        run: mkdir -p "$HOME/.local/bin"
+        shell: bash
+
+      - name: add ~/.local/bin to PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+        shell: bash
+
+      - name: Stack permissions bug workaround
+        run: "chown -R $(id -un):$(id -gn) ~"
+
+      - name: Runtime build
+        run: make runtime
+
+      - name: build Juvix
+        run: stack install --allow-different-user --system-ghc --ghc-options='-split-sections -optl-static'
+
+      - run: echo "HOME=$HOME" >> $GITHUB_ENV
+        shell: bash
+
+      - name: set current date to date.now output variable
+        id: date
+        run: echo "now=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: set Juvix version to juvix-version.current output variable
+        id: juvix-version
+        run: echo "current=$(juvix --version | head -n 1 | sed -E 's/[^0-9]+(.*)/\1/')" >> $GITHUB_OUTPUT
+
+      - name: create release tar
+        run: |
+          cp "${{ env.HOME }}/.local/bin/juvix" /tmp/juvix
+          cd /tmp
+          tar zcf "juvix-linux_x86_64-v${{ steps.juvix-version.outputs.current }}.tar.gz" juvix
+
+      - name: create nightly release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: "nightly-${{ steps.date.outputs.now }}-${{ steps.juvix-version.outputs.current }}"
+          fail_on_unmatched_files: true
+          files: /tmp/juvix-linux*
+          name: "Nightly Build ${{ steps.date.outputs.now }} ${{ steps.juvix-version.outputs.current }}"
