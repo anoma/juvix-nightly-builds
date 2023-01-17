@@ -1,4 +1,4 @@
-name: Nightly build and release
+name: Nightly build, release and benchmark
 
 on:
   workflow_dispatch:
@@ -59,3 +59,112 @@ jobs:
           fail_on_unmatched_files: true
           files: /tmp/juvix-linux*
           name: "Nightly Build ${{ steps.date.outputs.now }} ${{ steps.juvix-version.outputs.current }}"
+
+  bench:
+    needs: build
+    name: Run benchmarks
+    runs-on: ubuntu-20.04
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+          repository: anoma/juvix
+          ref: main
+          path: main
+
+      - name: checkout nightly repo
+        uses: actions/checkout@v3
+        with:
+          path: nightly-repo
+
+      - name: Download latest nightly Juvix binary
+        uses: jaxxstorm/action-install-gh-release@v1.9.0
+        with:
+          repo: anoma/juvix-nightly-builds
+          cache: enable
+          rename-to: juvix
+          chmod: 0755
+
+      - name: Setup OCAML
+        uses: ocaml/setup-ocaml@v2
+        with:
+          ocaml-compiler: 4.13.x
+
+      - uses: actions/cache@v3
+        name: Cache ~/.stack
+        with:
+          path: ~/.stack
+          key: ${{ runner.os }}-${{ matrix.ghc }}-stack-global-${{ hashFiles('main/stack.yaml') }}-${{ hashFiles('main/package.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-9.2.5-stack-global-
+
+      - uses: actions/cache@v3
+        name: Cache .stack-work
+        with:
+          path: main/.stack-work
+          key: ${{ runner.os }}-${{ matrix.ghc }}-stack-work-${{ hashFiles('main/stack.yaml') }}-${{ hashFiles('main/package.yaml') }}-${{ hashFiles('main/**/*.hs') }}
+          restore-keys: |
+            ${{ runner.os }}-9.2.5-stack-work-
+
+      - uses: haskell/actions/setup@v1
+        name: Setup Haskell
+        with:
+          ghc-version: 9.2.5
+          enable-stack: true
+          stack-version: 'latest'
+
+      - name: Install gnuplot
+        run: sudo apt install gnuplot
+
+      - name: Cache LLVM and Clang (Linux)
+        id: cache-llvm
+        uses: actions/cache@v3
+        with:
+          path: |
+            C:/Program Files/LLVM
+            ./llvm
+          key: ${{ runner.os }}-llvm-13
+
+      - name: Install LLVM and Clang (Linux)
+        uses: KyleMayes/install-llvm-action@v1
+        with:
+          version: "13.0"
+          cached: ${{ steps.cache-llvm.outputs.cache-hit }}
+
+      - name: Download and extract wasi-sysroot
+        run: |
+          curl https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-15/wasi-sysroot-15.0.tar.gz -OL
+          tar xfv wasi-sysroot-15.0.tar.gz
+
+      - name: Set WASI_SYSROOT_PATH
+        run: |
+          echo "WASI_SYSROOT_PATH=$GITHUB_WORKSPACE/wasi-sysroot" >> $GITHUB_ENV
+
+      - name: Setup Wasmer
+        uses: wasmerio/setup-wasmer@v1
+
+      - name: Setup Juvix runtime
+        run: |
+          cd main
+          make runtime
+
+      - name: Run benchmarks
+        run: |
+          eval $(opam env)
+          wasmer --version
+          juvix --version
+          ocamlc --version
+          ocamlopt --version
+          clang --version
+          cd main
+          stack bench --system-ghc
+
+      - name: Copy benchmark results
+        run: cp -r main/.benchmark-results nightly-repo/benchmark-results
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: Add benchmark results
+          add: benchmark-results/**/*.svg
+          cwd: ./nightly-repo
