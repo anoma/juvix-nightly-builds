@@ -53,12 +53,15 @@ jobs:
           tar zcf "juvix-linux_x86_64-v${{ steps.juvix-version.outputs.current }}.tar.gz" juvix
 
       - name: create nightly release
-        uses: softprops/action-gh-release@v1
+        uses: ncipollo/release-action@v1
         with:
-          tag_name: "nightly-${{ steps.date.outputs.now }}-${{ steps.juvix-version.outputs.current }}"
-          fail_on_unmatched_files: true
-          files: /tmp/juvix-linux*
+          tag: "nightly-${{ steps.date.outputs.now }}-${{ steps.juvix-version.outputs.current }}"
+          commit: "main"
           name: "Nightly Build ${{ steps.date.outputs.now }} ${{ steps.juvix-version.outputs.current }}"
+          makeLatest: true
+          artifacts: /tmp/juvix-linux*
+          artifactErrorsFailBuild: true
+          allowUpdates: true
 
   bench:
     needs: build
