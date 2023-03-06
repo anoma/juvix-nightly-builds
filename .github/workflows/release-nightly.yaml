@@ -9,7 +9,7 @@ jobs:
   build:
     name: Build static Linux binary and release
     runs-on: ubuntu-latest
-    container: ghcr.io/paulcadman/ghc-alpine:9.2.5
+    container: ghcr.io/paulcadman/ghc-alpine:9.2.6
     steps:
       - name: checkout code
         uses: actions/checkout@v3
@@ -100,7 +100,7 @@ jobs:
           path: ~/.stack
           key: ${{ runner.os }}-${{ matrix.ghc }}-stack-global-${{ hashFiles('main/stack.yaml') }}-${{ hashFiles('main/package.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-9.2.5-stack-global-
+            ${{ runner.os }}-9.2.6-stack-global-
 
       - uses: actions/cache@v3
         name: Cache .stack-work
@@ -108,12 +108,12 @@ jobs:
           path: main/.stack-work
           key: ${{ runner.os }}-${{ matrix.ghc }}-stack-work-${{ hashFiles('main/stack.yaml') }}-${{ hashFiles('main/package.yaml') }}-${{ hashFiles('main/**/*.hs') }}
           restore-keys: |
-            ${{ runner.os }}-9.2.5-stack-work-
+            ${{ runner.os }}-9.2.6-stack-work-
 
-      - uses: haskell/actions/setup@v1
+      - uses: haskell/actions/setup@v2
         name: Setup Haskell
         with:
-          ghc-version: 9.2.5
+          ghc-version: 9.2.6
           enable-stack: true
           stack-version: 'latest'
 
