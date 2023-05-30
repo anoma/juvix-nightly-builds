@@ -10,6 +10,8 @@ jobs:
     name: Build static Linux binary and release
     runs-on: ubuntu-latest
     container: ghcr.io/paulcadman/ghc-alpine:9.2.7
+    outputs:
+      tag: ${{ steps.tag.outputs.value }}
     steps:
       - name: checkout code
         uses: actions/checkout@v3
@@ -46,24 +48,46 @@ jobs:
         id: juvix-version
         run: echo "current=$(juvix --version | head -n 1 | sed -E 's/[^0-9]+(.*)/\1/')" >> $GITHUB_OUTPUT
 
+      - name: set tag.value to tag for release
+        id: tag
+        run: echo "value=nightly-${{ steps.date.outputs.now }}-${{ steps.juvix-version.outputs.current }}" >> $GITHUB_OUTPUT
+
       - name: create release tar
         run: |
           cp "${{ env.HOME }}/.local/bin/juvix" /tmp/juvix
           cd /tmp
           tar zcf juvix-linux_x86_64.tar.gz juvix
 
-      - name: create nightly release
+      - name: create draft nightly release and upload artifacts
         uses: ncipollo/release-action@v1
         with:
-          tag: "nightly-${{ steps.date.outputs.now }}-${{ steps.juvix-version.outputs.current }}"
+          tag: ${{ steps.tag.outputs.value }}
           commit: "main"
           name: "Nightly Build ${{ steps.date.outputs.now }} ${{ steps.juvix-version.outputs.current }}"
-          makeLatest: true
           artifacts: /tmp/juvix-linux*
           artifactErrorsFailBuild: true
           allowUpdates: true
+          draft: true
+
+  publish-release:
+    needs: build
+    runs-on: ubuntu-latest
+    name: Publish Release
+    steps:
+    - name: checkout code
+      uses: actions/checkout@v3
+      with:
+        repository: anoma/juvix
+        ref: main
+    - name: make nightly release latest
+      uses: ncipollo/release-action@v1
+      with:
+        tag: ${{needs.build.outputs.tag}}
+        makeLatest: true
+        allowUpdates: true
 
   bench:
+    if: false
     needs: build
     name: Run benchmarks
     runs-on: ubuntu-20.04
