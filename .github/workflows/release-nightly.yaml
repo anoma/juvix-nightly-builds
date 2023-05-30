@@ -125,7 +125,7 @@ jobs:
     - name: upload macOS release binary
       uses: ncipollo/release-action@v1
       with:
-        tag: ${{needs.build.outputs.tag}}
+        tag: ${{needs.build-linux.outputs.tag}}
         omitNameDuringUpdate: true
         artifactErrorsFailBuild: true
         artifacts: /tmp/juvix-darwin*
@@ -135,14 +135,13 @@ jobs:
     - name: make nightly release latest
       uses: ncipollo/release-action@v1
       with:
-        tag: ${{needs.build.outputs.tag}}
+        tag: ${{needs.build-linux.outputs.tag}}
         omitNameDuringUpdate: true
         makeLatest: true
         allowUpdates: true
 
   bench:
-    if: false
-    needs: build-linux
+    needs: publish-release
     name: Run benchmarks
     runs-on: ubuntu-20.04
     steps:
