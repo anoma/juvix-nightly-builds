@@ -50,7 +50,7 @@ jobs:
         run: |
           cp "${{ env.HOME }}/.local/bin/juvix" /tmp/juvix
           cd /tmp
-          tar zcf "juvix-linux_x86_64-v${{ steps.juvix-version.outputs.current }}.tar.gz" juvix
+          tar zcf juvix-linux_x86_64.tar.gz juvix
 
       - name: create nightly release
         uses: ncipollo/release-action@v1
