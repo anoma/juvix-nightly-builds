@@ -2,14 +2,22 @@ name: Nightly build, release and benchmark
 
 on:
   workflow_dispatch:
+    inputs:
+      ref:
+        description: "the repository ref to build"
+        required: true
+        default: "main"
   schedule:
     - cron: '0 3 * * *'
+
+env:
+  STACK_VERSION: 2.11.1
 
 jobs:
   build-linux:
     name: Build static Linux binary and release
     runs-on: ubuntu-latest
-    container: ghcr.io/paulcadman/ghc-alpine:9.2.7
+    container: glcr.b-data.ch/ghc/ghc-musl:9.4.5
     outputs:
       tag: ${{ steps.tag.outputs.value }}
     steps:
@@ -18,11 +26,17 @@ jobs:
         with:
           submodules: true
           repository: anoma/juvix
-          ref: main
+          ref: ${{ github.event.inputs.ref }}
 
       - name: create ~/.local/bin
         run: mkdir -p "$HOME/.local/bin"
         shell: bash
+
+      - name: install stack
+        run: |
+          curl https://github.com/commercialhaskell/stack/releases/download/v$STACK_VERSION/stack-$STACK_VERSION-linux-x86_64-static.tar.gz -OL
+          tar xf stack-$STACK_VERSION-linux-x86_64-static.tar.gz
+          cp stack-$STACK_VERSION-linux-x86_64-static/stack /usr/local/bin
 
       - name: add ~/.local/bin to PATH
         run: echo "$HOME/.local/bin" >> $GITHUB_PATH
@@ -31,11 +45,14 @@ jobs:
       - name: Stack permissions bug workaround
         run: "chown -R $(id -un):$(id -gn) ~"
 
+      - name: Install clang14
+        run: apk add --update clang14
+
       - name: Runtime build
-        run: make runtime
+        run: make runtime LIBTOOL=llvm14-ar
 
       - name: build Juvix
-        run: stack install --allow-different-user --system-ghc --ghc-options='-split-sections -optl-static'
+        run: stack install --allow-different-user --system-ghc --ghc-options='-split-sections' --flag juvix:static
 
       - run: echo "HOME=$HOME" >> $GITHUB_ENV
         shell: bash
