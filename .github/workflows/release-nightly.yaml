@@ -95,7 +95,7 @@ jobs:
         with:
           submodules: true
           repository: anoma/juvix
-          ref: main
+          ref: ${{ github.event.inputs.ref }}
 
       - name: Set homebrew LLVM CC and LIBTOOL vars (macOS)
         run: |
