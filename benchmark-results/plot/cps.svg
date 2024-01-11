@@ -70,11 +70,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,468.3 L775.0,468.3  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,463.6 L775.0,463.6  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M63.6,468.3 M775.0,468.3  '/>	<g transform="translate(55.3,473.5)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+	<path stroke='black'  d='M63.6,463.6 M775.0,463.6  '/>	<g transform="translate(55.3,468.8)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
 		<text><tspan font-family="Arial" > 2</tspan></text>
 	</g>
 </g>
@@ -83,11 +83,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,426.3 L775.0,426.3  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,416.9 L775.0,416.9  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M63.6,426.3 M775.0,426.3  '/>	<g transform="translate(55.3,431.5)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+	<path stroke='black'  d='M63.6,416.9 M775.0,416.9  '/>	<g transform="translate(55.3,422.1)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
 		<text><tspan font-family="Arial" > 4</tspan></text>
 	</g>
 </g>
@@ -96,11 +96,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,384.2 L775.0,384.2  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,370.2 L775.0,370.2  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M63.6,384.2 M775.0,384.2  '/>	<g transform="translate(55.3,389.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+	<path stroke='black'  d='M63.6,370.2 M775.0,370.2  '/>	<g transform="translate(55.3,375.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
 		<text><tspan font-family="Arial" > 6</tspan></text>
 	</g>
 </g>
@@ -109,11 +109,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,342.2 L775.0,342.2  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,323.5 L775.0,323.5  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M63.6,342.2 M775.0,342.2  '/>	<g transform="translate(55.3,347.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+	<path stroke='black'  d='M63.6,323.5 M775.0,323.5  '/>	<g transform="translate(55.3,328.7)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
 		<text><tspan font-family="Arial" > 8</tspan></text>
 	</g>
 </g>
@@ -122,11 +122,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,300.2 L775.0,300.2  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,276.9 L775.0,276.9  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M63.6,300.2 M775.0,300.2  '/>	<g transform="translate(55.3,305.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+	<path stroke='black'  d='M63.6,276.9 M775.0,276.9  '/>	<g transform="translate(55.3,282.1)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
 		<text><tspan font-family="Arial" > 10</tspan></text>
 	</g>
 </g>
@@ -135,11 +135,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,258.2 L775.0,258.2  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,230.2 L775.0,230.2  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M63.6,258.2 M775.0,258.2  '/>	<g transform="translate(55.3,263.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+	<path stroke='black'  d='M63.6,230.2 M775.0,230.2  '/>	<g transform="translate(55.3,235.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
 		<text><tspan font-family="Arial" > 12</tspan></text>
 	</g>
 </g>
@@ -148,11 +148,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,216.2 L775.0,216.2  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,183.5 L775.0,183.5  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M63.6,216.2 M775.0,216.2  '/>	<g transform="translate(55.3,221.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+	<path stroke='black'  d='M63.6,183.5 M775.0,183.5  '/>	<g transform="translate(55.3,188.7)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
 		<text><tspan font-family="Arial" > 14</tspan></text>
 	</g>
 </g>
@@ -161,25 +161,12 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,174.1 L775.0,174.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,136.8 L775.0,136.8  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M63.6,174.1 M775.0,174.1  '/>	<g transform="translate(55.3,179.3)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+	<path stroke='black'  d='M63.6,136.8 M775.0,136.8  '/>	<g transform="translate(55.3,142.0)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
 		<text><tspan font-family="Arial" > 16</tspan></text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M63.6,132.1 L775.0,132.1  '/></g>
-<g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M63.6,132.1 M775.0,132.1  '/>	<g transform="translate(55.3,137.3)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
-		<text><tspan font-family="Arial" > 18</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -192,7 +179,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M63.6,90.1 M775.0,90.1  '/>	<g transform="translate(55.3,95.3)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
-		<text><tspan font-family="Arial" > 20</tspan></text>
+		<text><tspan font-family="Arial" > 18</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -264,68 +251,68 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<g id="gnuplot_plot_1a" ><title>gnuplot_plot_1a</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '104.8,510.3 146.2,510.3 146.2,504.3 104.8,504.3 '/>
+		<polygon fill = 'rgb(148,   0, 211)' points = '104.8,510.3 146.2,510.3 146.2,503.7 104.8,503.7 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M104.8,510.3 L104.8,504.4 L146.1,504.4 L146.1,510.3 L104.8,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '166.7,510.3 208.0,510.3 208.0,465.1 166.7,465.1 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M104.8,510.3 L104.8,503.8 L146.1,503.8 L146.1,510.3 L104.8,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '166.7,510.3 208.0,510.3 208.0,460.0 166.7,460.0 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M166.7,510.3 L166.7,465.2 L207.9,465.2 L207.9,510.3 L166.7,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '228.6,510.3 269.9,510.3 269.9,124.5 228.6,124.5 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M166.7,510.3 L166.7,460.1 L207.9,460.1 L207.9,510.3 L166.7,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '228.6,510.3 269.9,510.3 269.9,94.6 228.6,94.6 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M228.6,510.3 L228.6,124.6 L269.8,124.6 L269.8,510.3 L228.6,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '290.4,510.3 331.8,510.3 331.8,498.0 290.4,498.0 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M228.6,510.3 L228.6,94.7 L269.8,94.7 L269.8,510.3 L228.6,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '290.4,510.3 331.8,510.3 331.8,496.6 290.4,496.6 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M290.4,510.3 L290.4,498.1 L331.7,498.1 L331.7,510.3 L290.4,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '352.3,510.3 393.6,510.3 393.6,492.7 352.3,492.7 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M290.4,510.3 L290.4,496.7 L331.7,496.7 L331.7,510.3 L290.4,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '352.3,510.3 393.6,510.3 393.6,491.1 352.3,491.1 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M352.3,510.3 L352.3,492.8 L393.5,492.8 L393.5,510.3 L352.3,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '414.1,510.3 455.5,510.3 455.5,491.3 414.1,491.3 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M352.3,510.3 L352.3,491.2 L393.5,491.2 L393.5,510.3 L352.3,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '414.1,510.3 455.5,510.3 455.5,489.3 414.1,489.3 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M414.1,510.3 L414.1,491.4 L455.4,491.4 L455.4,510.3 L414.1,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '476.0,510.3 517.3,510.3 517.3,506.9 476.0,506.9 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M414.1,510.3 L414.1,489.4 L455.4,489.4 L455.4,510.3 L414.1,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '476.0,510.3 517.3,510.3 517.3,506.6 476.0,506.6 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M476.0,510.3 L476.0,507.0 L517.2,507.0 L517.2,510.3 L476.0,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '537.9,510.3 579.2,510.3 579.2,506.1 537.9,506.1 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M476.0,510.3 L476.0,506.7 L517.2,506.7 L517.2,510.3 L476.0,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '537.9,510.3 579.2,510.3 579.2,505.7 537.9,505.7 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M537.9,510.3 L537.9,506.2 L579.1,506.2 L579.1,510.3 L537.9,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '599.7,510.3 641.1,510.3 641.1,504.3 599.7,504.3 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M537.9,510.3 L537.9,505.8 L579.1,505.8 L579.1,510.3 L537.9,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '599.7,510.3 641.1,510.3 641.1,503.7 599.7,503.7 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M599.7,510.3 L599.7,504.4 L641.0,504.4 L641.0,510.3 L599.7,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '661.6,510.3 702.9,510.3 702.9,503.5 661.6,503.5 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M599.7,510.3 L599.7,503.8 L641.0,503.8 L641.0,510.3 L599.7,510.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '661.6,510.3 702.9,510.3 702.9,502.8 661.6,502.8 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M661.6,510.3 L661.6,503.6 L702.8,503.6 L702.8,510.3 L661.6,510.3 Z  '/></g>
+	<path stroke='rgb(148,   0, 211)'  d='M661.6,510.3 L661.6,502.9 L702.8,502.9 L702.8,510.3 L661.6,510.3 Z  '/></g>
 	</g>
 	<g id="gnuplot_plot_2a" ><title>Mean</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(125.5,501.5)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.2803</tspan></text>
+	<g transform="translate(125.5,500.9)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.2801</tspan></text>
 	</g>
-	<g transform="translate(187.3,462.3)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >2.1465</tspan></text>
+	<g transform="translate(187.3,457.2)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >2.1508</tspan></text>
 	</g>
-	<g transform="translate(249.2,121.7)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >18.3581</tspan></text>
+	<g transform="translate(249.2,91.8)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >17.8049</tspan></text>
 	</g>
-	<g transform="translate(311.0,495.2)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.5813</tspan></text>
+	<g transform="translate(311.0,493.8)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.5812</tspan></text>
 	</g>
-	<g transform="translate(372.9,489.9)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.8322</tspan></text>
+	<g transform="translate(372.9,488.3)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.8181</tspan></text>
 	</g>
-	<g transform="translate(434.8,488.5)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.9018</tspan></text>
+	<g transform="translate(434.8,486.5)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.8948</tspan></text>
 	</g>
-	<g transform="translate(496.6,504.1)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.1551</tspan></text>
+	<g transform="translate(496.6,503.8)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.1552</tspan></text>
 	</g>
-	<g transform="translate(558.5,503.3)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.1934</tspan></text>
+	<g transform="translate(558.5,502.9)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.1930</tspan></text>
 	</g>
-	<g transform="translate(620.3,501.5)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.2786</tspan></text>
+	<g transform="translate(620.3,500.9)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.2785</tspan></text>
 	</g>
-	<g transform="translate(682.2,500.7)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.3194</tspan></text>
+	<g transform="translate(682.2,500.0)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.3166</tspan></text>
 	</g>
 </g>
 	</g>
@@ -357,12 +344,12 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M53.9,958.2 L775.0,958.2  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M53.9,972.2 L775.0,972.2  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M53.9,958.2 M775.0,958.2  '/>	<g transform="translate(45.6,963.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
-		<text><tspan font-family="Arial" > 0.5</tspan></text>
+	<path stroke='black'  d='M53.9,972.2 M775.0,972.2  '/>	<g transform="translate(45.6,977.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 0.2</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -370,38 +357,51 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M53.9,874.2 L775.0,874.2  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M53.9,902.2 L775.0,902.2  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M53.9,874.2 M775.0,874.2  '/>	<g transform="translate(45.6,879.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+	<path stroke='black'  d='M53.9,902.2 M775.0,902.2  '/>	<g transform="translate(45.6,907.4)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 0.4</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M53.9,832.1 L775.0,832.1  '/></g>
+<g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M53.9,832.1 M775.0,832.1  '/>	<g transform="translate(45.6,837.3)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 0.6</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M53.9,762.1 L775.0,762.1  '/></g>
+<g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M53.9,762.1 M775.0,762.1  '/>	<g transform="translate(45.6,767.3)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 0.8</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M53.9,692.1 L775.0,692.1  '/></g>
+<g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M53.9,692.1 M775.0,692.1  '/>	<g transform="translate(45.6,697.3)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
 		<text><tspan font-family="Arial" > 1</tspan></text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M53.9,790.1 L775.0,790.1  '/></g>
-<g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M53.9,790.1 M775.0,790.1  '/>	<g transform="translate(45.6,795.3)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
-		<text><tspan font-family="Arial" > 1.5</tspan></text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M53.9,706.1 L775.0,706.1  '/></g>
-<g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M53.9,706.1 M775.0,706.1  '/>	<g transform="translate(45.6,711.3)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
-		<text><tspan font-family="Arial" > 2</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -414,7 +414,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M53.9,622.0 M775.0,622.0  '/>	<g transform="translate(45.6,627.2)" stroke="none" fill="black" font-family="Arial" font-size="16.00"  text-anchor="end">
-		<text><tspan font-family="Arial" > 2.5</tspan></text>
+		<text><tspan font-family="Arial" > 1.2</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -481,68 +481,68 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<g id="gnuplot_plot_1b" ><title>gnuplot_plot_1b</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '95.7,1042.3 137.6,1042.3 137.6,910.2 95.7,910.2 '/>
+		<polygon fill = 'rgb(148,   0, 211)' points = '95.7,1042.3 137.6,1042.3 137.6,755.5 95.7,755.5 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M95.7,1042.3 L95.7,910.3 L137.5,910.3 L137.5,1042.3 L95.7,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '158.4,1042.3 200.3,1042.3 200.3,700.1 158.4,700.1 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M95.7,1042.3 L95.7,755.6 L137.5,755.6 L137.5,1042.3 L95.7,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '158.4,1042.3 200.3,1042.3 200.3,749.1 158.4,749.1 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M158.4,1042.3 L158.4,700.2 L200.2,700.2 L200.2,1042.3 L158.4,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '221.1,1042.3 263.0,1042.3 263.0,879.5 221.1,879.5 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M158.4,1042.3 L158.4,749.2 L200.2,749.2 L200.2,1042.3 L158.4,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '221.1,1042.3 263.0,1042.3 263.0,910.7 221.1,910.7 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M221.1,1042.3 L221.1,879.6 L262.9,879.6 L262.9,1042.3 L221.1,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '283.8,1042.3 325.7,1042.3 325.7,1041.2 283.8,1041.2 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M221.1,1042.3 L221.1,910.8 L262.9,910.8 L262.9,1042.3 L221.1,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '283.8,1042.3 325.7,1042.3 325.7,1040.9 283.8,1040.9 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M283.8,1042.3 L283.8,1041.3 L325.6,1041.3 L325.6,1042.3 L283.8,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '346.5,1042.3 388.4,1042.3 388.4,766.7 346.5,766.7 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M283.8,1042.3 L283.8,1041.0 L325.6,1041.0 L325.6,1042.3 L283.8,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '346.5,1042.3 388.4,1042.3 388.4,626.9 346.5,626.9 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M346.5,1042.3 L346.5,766.8 L388.3,766.8 L388.3,1042.3 L346.5,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '409.2,1042.3 451.1,1042.3 451.1,1030.0 409.2,1030.0 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M346.5,1042.3 L346.5,627.0 L388.3,627.0 L388.3,1042.3 L346.5,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '409.2,1042.3 451.1,1042.3 451.1,1013.8 409.2,1013.8 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M409.2,1042.3 L409.2,1030.1 L451.0,1030.1 L451.0,1042.3 L409.2,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '471.9,1042.3 513.8,1042.3 513.8,1031.9 471.9,1031.9 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M409.2,1042.3 L409.2,1013.9 L451.0,1013.9 L451.0,1042.3 L409.2,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '471.9,1042.3 513.8,1042.3 513.8,950.9 471.9,950.9 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M471.9,1042.3 L471.9,1032.0 L513.7,1032.0 L513.7,1042.3 L471.9,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '534.6,1042.3 576.5,1042.3 576.5,986.6 534.6,986.6 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M471.9,1042.3 L471.9,951.0 L513.7,951.0 L513.7,1042.3 L471.9,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '534.6,1042.3 576.5,1042.3 576.5,1004.6 534.6,1004.6 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M534.6,1042.3 L534.6,986.7 L576.4,986.7 L576.4,1042.3 L534.6,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '597.3,1042.3 639.2,1042.3 639.2,1035.0 597.3,1035.0 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M534.6,1042.3 L534.6,1004.7 L576.4,1004.7 L576.4,1042.3 L534.6,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '597.3,1042.3 639.2,1042.3 639.2,1039.6 597.3,1039.6 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M597.3,1042.3 L597.3,1035.1 L639.1,1035.1 L639.1,1042.3 L597.3,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' points = '660.0,1042.3 701.9,1042.3 701.9,741.4 660.0,741.4 '/>
+	<path stroke='rgb(148,   0, 211)'  d='M597.3,1042.3 L597.3,1039.7 L639.1,1039.7 L639.1,1042.3 L597.3,1042.3 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(148,   0, 211)' points = '660.0,1042.3 701.9,1042.3 701.9,1023.3 660.0,1023.3 '/>
 	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M660.0,1042.3 L660.0,741.5 L701.8,741.5 L701.8,1042.3 L660.0,1042.3 Z  '/></g>
+	<path stroke='rgb(148,   0, 211)'  d='M660.0,1042.3 L660.0,1023.4 L701.8,1023.4 L701.8,1042.3 L660.0,1042.3 Z  '/></g>
 	</g>
 	<g id="gnuplot_plot_2b" ><title>gnuplot_plot_2b</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(116.6,907.4)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.79%</tspan></text>
+	<g transform="translate(116.6,752.7)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.82%</tspan></text>
 	</g>
-	<g transform="translate(179.3,697.3)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >2.03%</tspan></text>
+	<g transform="translate(179.3,746.3)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.84%</tspan></text>
 	</g>
-	<g transform="translate(242.0,876.7)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.97%</tspan></text>
+	<g transform="translate(242.0,907.9)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.38%</tspan></text>
 	</g>
-	<g transform="translate(304.7,1038.4)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+	<g transform="translate(304.7,1038.1)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.00%</tspan></text>
+	</g>
+	<g transform="translate(367.4,624.1)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >1.19%</tspan></text>
+	</g>
+	<g transform="translate(430.1,1011.0)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.08%</tspan></text>
+	</g>
+	<g transform="translate(492.8,948.1)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.26%</tspan></text>
+	</g>
+	<g transform="translate(555.5,1001.8)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.11%</tspan></text>
+	</g>
+	<g transform="translate(618.2,1036.8)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
 		<text><tspan font-family="Arial" >0.01%</tspan></text>
 	</g>
-	<g transform="translate(367.4,763.9)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >1.64%</tspan></text>
-	</g>
-	<g transform="translate(430.1,1027.2)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.07%</tspan></text>
-	</g>
-	<g transform="translate(492.8,1029.1)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.06%</tspan></text>
-	</g>
-	<g transform="translate(555.5,983.8)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.33%</tspan></text>
-	</g>
-	<g transform="translate(618.2,1032.2)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >0.04%</tspan></text>
-	</g>
-	<g transform="translate(680.9,738.6)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >1.79%</tspan></text>
+	<g transform="translate(680.9,1020.5)" stroke="none" fill="black" font-family="Arial" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.05%</tspan></text>
 	</g>
 </g>
 	</g>
@@ -570,7 +570,7 @@ gnuplot_svg.plot_height = 420.3;
 gnuplot_svg.plot_axis_xmin = -1;
 gnuplot_svg.plot_axis_xmax = 10.5;
 gnuplot_svg.plot_axis_ymin = 0;
-gnuplot_svg.plot_axis_ymax = 2.5;
+gnuplot_svg.plot_axis_ymax = 1.2;
 gnuplot_svg.polar_mode = false;
 gnuplot_svg.plot_axis_x2min = "none"
 gnuplot_svg.plot_axis_y2min = "none"
