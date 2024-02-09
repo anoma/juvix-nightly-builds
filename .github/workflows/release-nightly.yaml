@@ -3,6 +3,7 @@ name: Nightly build, release and benchmark
 on:
   schedule:
     - cron: '0 3 * * *'
+  workflow-dispatch:
 
 env:
   STACK_VERSION: 2.11.1
