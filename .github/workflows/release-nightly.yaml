@@ -89,9 +89,9 @@ jobs:
           allowUpdates: true
           draft: true
 
-  build-macos:
+  build-macos-x86_64:
     runs-on: macos-latest
-    name: Build macOS binary
+    name: Build macOS x86_64 binary
     steps:
       - name: checkout code
         uses: actions/checkout@v3
@@ -128,18 +128,66 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: macos-binary
+          name: macos-x86_64-binary
+          path: juvix-darwin*
+          if-no-files-found: error
+
+  build-macos-aarch64:
+    runs-on: macos-14
+    name: Build macOS aarch64 binary
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+          repository: anoma/juvix
+          ref: main
+
+      - name: Set homebrew LLVM CC and LIBTOOL vars (macOS)
+        run: |
+          echo "CC=$(brew --prefix llvm@15)/bin/clang" >> $GITHUB_ENV
+          echo "LIBTOOL=$(brew --prefix llvm@15)/bin/llvm-ar" >> $GITHUB_ENV
+
+      - name: Make runtime
+        run: |
+          make CC=$CC LIBTOOL=$LIBTOOL runtime
+
+      - name: Stack setup
+        id: stack
+        uses: freckle/stack-action@v4
+        with:
+          test: false
+
+      - name: Install Juvix
+        run: |
+          make CC=$CC LIBTOOL=$LIBTOOL install
+
+      - run: echo "HOME=$HOME" >> $GITHUB_ENV
+        shell: bash
+
+      - name: create release tar
+        run: |
+          tar zcf juvix-darwin_aarch64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: macos-aarch64-binary
           path: juvix-darwin*
           if-no-files-found: error
 
   publish-release:
-    needs: [build-linux, build-macos]
+    needs: [build-linux, build-macos-x86_64, build-macos-aarch64]
     runs-on: ubuntu-latest
     name: Publish Release
     steps:
     - uses: actions/download-artifact@v3
       with:
-        name: macos-binary
+        name: macos-x86_64-binary
+        path: /tmp
+
+    - uses: actions/download-artifact@v3
+      with:
+        name: macos-aarch64-binary
         path: /tmp
 
     - name: upload macOS release binary
