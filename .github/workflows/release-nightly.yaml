@@ -143,6 +143,10 @@ jobs:
           repository: anoma/juvix
           ref: main
 
+      - name: install stack
+        run: |
+          brew install haskell-stack
+
       - name: Set homebrew LLVM CC and LIBTOOL vars (macOS)
         run: |
           echo "CC=$(brew --prefix llvm@15)/bin/clang" >> $GITHUB_ENV
