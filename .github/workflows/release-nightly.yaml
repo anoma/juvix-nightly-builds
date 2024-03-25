@@ -76,7 +76,7 @@ jobs:
         run: |
           cp "${{ env.HOME }}/.local/bin/juvix" /tmp/juvix
           cd /tmp
-          tar zcf juvix-linux_x86_64.tar.gz juvix
+          tar zcf juvix-linux-x86_64.tar.gz juvix
 
       - name: create draft nightly release and upload artifacts
         uses: ncipollo/release-action@v1
@@ -124,7 +124,7 @@ jobs:
 
       - name: create release tar
         run: |
-          tar zcf juvix-darwin_x86_64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
+          tar zcf juvix-macos-x86_64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
 
       - uses: actions/upload-artifact@v3
         with:
@@ -171,7 +171,7 @@ jobs:
 
       - name: create release tar
         run: |
-          tar zcf juvix-darwin_aarch64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
+          tar zcf juvix-macos-aarch64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
 
       - uses: actions/upload-artifact@v3
         with:
