@@ -89,7 +89,7 @@ jobs:
           allowUpdates: true
           draft: true
 
-  build-macos-x86_64:
+  build-darwin-x86_64:
     runs-on: macos-latest
     name: Build macOS x86_64 binary
     steps:
@@ -124,15 +124,15 @@ jobs:
 
       - name: create release tar
         run: |
-          tar zcf juvix-macos-x86_64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
+          tar zcf juvix-darwin-x86_64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
 
       - uses: actions/upload-artifact@v3
         with:
-          name: macos-x86_64-binary
-          path: juvix-macos*
+          name: darwin-x86_64-binary
+          path: juvix-darwin*
           if-no-files-found: error
 
-  build-macos-aarch64:
+  build-darwin-aarch64:
     runs-on: macos-14
     name: Build macOS aarch64 binary
     steps:
@@ -171,27 +171,27 @@ jobs:
 
       - name: create release tar
         run: |
-          tar zcf juvix-macos-aarch64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
+          tar zcf juvix-darwin-aarch64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
 
       - uses: actions/upload-artifact@v3
         with:
-          name: macos-aarch64-binary
-          path: juvix-macos*
+          name: darwin-aarch64-binary
+          path: juvix-darwin*
           if-no-files-found: error
 
   publish-release:
-    needs: [build-linux, build-macos-x86_64, build-macos-aarch64]
+    needs: [build-linux, build-darwin-x86_64, build-darwin-aarch64]
     runs-on: ubuntu-latest
     name: Publish Release
     steps:
     - uses: actions/download-artifact@v3
       with:
-        name: macos-x86_64-binary
+        name: darwin-x86_64-binary
         path: /tmp
 
     - uses: actions/download-artifact@v3
       with:
-        name: macos-aarch64-binary
+        name: darwin-aarch64-binary
         path: /tmp
 
     - name: upload macOS release binary
@@ -200,7 +200,7 @@ jobs:
         tag: ${{needs.build-linux.outputs.tag}}
         omitNameDuringUpdate: true
         artifactErrorsFailBuild: true
-        artifacts: /tmp/juvix-macos*
+        artifacts: /tmp/juvix-darwin*
         draft: true
         allowUpdates: true
 
