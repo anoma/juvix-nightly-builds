@@ -90,7 +90,7 @@ jobs:
           draft: true
 
   build-darwin-x86_64:
-    runs-on: macos-latest
+    runs-on: macos-13
     name: Build macOS x86_64 binary
     steps:
       - name: checkout code
@@ -99,6 +99,10 @@ jobs:
           submodules: true
           repository: anoma/juvix
           ref: main
+
+      - name: install stack
+        run: |
+          brew install haskell-stack
 
       - name: Set homebrew LLVM CC and LIBTOOL vars (macOS)
         run: |
