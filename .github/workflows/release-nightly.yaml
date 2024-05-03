@@ -8,6 +8,11 @@ on:
 env:
   STACK_VERSION: 2.11.1
 
+permissions:
+  id-token: write
+  attestations: write
+  contents: read
+
 jobs:
   build-linux:
     name: Build static Linux binary and release
@@ -78,6 +83,11 @@ jobs:
           cd /tmp
           tar zcf juvix-linux-x86_64.tar.gz juvix
 
+      - name: attest release tar
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: '/tmp/juvix-linux*'
+
       - name: create draft nightly release and upload artifacts
         uses: ncipollo/release-action@v1
         with:
@@ -130,6 +140,11 @@ jobs:
         run: |
           tar zcf juvix-darwin-x86_64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
 
+      - name: attest release tar
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: 'juvix-darwin*'
+
       - uses: actions/upload-artifact@v3
         with:
           name: darwin-x86_64-binary
@@ -176,6 +191,11 @@ jobs:
       - name: create release tar
         run: |
           tar zcf juvix-darwin-aarch64.tar.gz -C "${{ env.HOME }}/.local/bin" juvix
+
+      - name: attest release tar
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: 'juvix-darwin*'
 
       - uses: actions/upload-artifact@v3
         with:
