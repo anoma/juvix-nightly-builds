@@ -244,6 +244,7 @@ jobs:
 
   bench:
     needs: publish-release
+    continue-on-error: true
     name: Run benchmarks
     runs-on: ubuntu-20.04
     steps:
