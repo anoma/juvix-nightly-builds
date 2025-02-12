@@ -89,10 +89,15 @@ jobs:
           cd /tmp
           tar zcf juvix-linux-x86_64.tar.gz juvix
 
+      - name: generate sha56sum of release tar
+        run: |
+          cd /tmp
+          sha256sum juvix-linux-x86_64.tar.gz > juvix-linux-x86_64.tar.gz.sha256
+
       - name: attest release tar
         uses: actions/attest-build-provenance@v1
         with:
-          subject-path: '/tmp/juvix-linux*'
+          subject-path: '/tmp/juvix-linux-x86_64.tar.gz'
 
       - name: create draft nightly release and upload artifacts
         uses: ncipollo/release-action@v1
@@ -149,7 +154,7 @@ jobs:
       - name: attest release tar
         uses: actions/attest-build-provenance@v1
         with:
-          subject-path: 'juvix-darwin*'
+          subject-path: 'juvix-darwin-x86_64.tar.gz'
 
       - uses: actions/upload-artifact@v4
         with:
@@ -201,7 +206,7 @@ jobs:
       - name: attest release tar
         uses: actions/attest-build-provenance@v1
         with:
-          subject-path: 'juvix-darwin*'
+          subject-path: 'juvix-darwin-aarch64.tar.gz'
 
       - uses: actions/upload-artifact@v4
         with:
@@ -224,7 +229,13 @@ jobs:
         name: darwin-aarch64-binary
         path: /tmp
 
-    - name: upload macOS release binary
+    - name: Create sha256 hashes of release artefacts
+      run: |
+        cd /tmp
+        sha256sum juvix-darwin-x86_64.tar.gz > juvix-darwin-x86_64.tar.gz.sha256
+        sha256sum juvix-darwin-aarch64.tar.gz > juvix-darwin-aarch64.tar.gz.sha256
+
+    - name: upload macOS release binary and hashes
       uses: ncipollo/release-action@v1
       with:
         tag: ${{needs.build-linux.outputs.tag}}
